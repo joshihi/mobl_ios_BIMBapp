@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <link href="includes/d3/style.css" rel="stylesheet" type="text/css">
+    <link href="includes/d3/c3.css" rel="stylesheet" type="text/css">
+    <script src="includes/d3/d3.v3.js"></script>
+    <script src="includes/d3/c3.js"></script>
+</head>
+
+<body>
+    <div id="chart" style="width:100%;height:100%;"></div>
+    <script type="text/javascript">
+        var chart = c3.generate({
+            "bindto": "#chart",
+            "data": {
+                "x": "x",
+                "columns": [
+                    ["x", 2016, 2017, 2018, 2019, 2020],
+                    ["Total", 1034451568.0207038, 2091661070.5378633, 3172129182.1103997, 4276367592.137532, 5404899247.185262],
+                    ["Basaglar", 982728989.6196686, 1976505921.9857984, 2981341265.748257, 3997240602.973219, 5024204409.066653],
+                    ["Lantus", 8603223.286932, 19154216.326025404, 31734517.026304446, 46428308.24423036, 63322494.69704069]
+                ],
+                "type": "bar",
+                "names": {
+                    "Total": "Total cost if Basaglar™ not available",
+                    "Lantus": "Total cost Lantus®",
+                    "Basaglar": "Total cost Basaglar™"
+                },
+                "groups": [
+                    ["Lantus", "Basaglar"]
+                ]
+            },
+            "zoom": {
+                "enabled": false
+            },
+            "subchart": {
+                "show": false
+            },
+            "color": {
+                "pattern": ["#DDDDB2", "#ABA714", "#B83D88"]
+            },
+            "grid": {
+                "x": {
+                    "show": false
+                },
+                "y": {
+                    "show": true,
+                    "lines": []
+                }
+            },
+            "axis": {
+                "x": {
+                    "label": "",
+                    "type": "category"
+                },
+                "y": {
+                    "label": {
+                        "text": "Cost (SAR)",
+                        "position": "outer-middle"
+                    }
+                }
+            }
+        });
+
+        function toggle(id) {
+            chart.toggle(id);
+        }
+        d3.select(".container").insert("div", ".chart").attr("class", "legend").selectAll("span").data(["Total", "Lantus", "Basaglar"]).enter().append("span").attr("data-id", function(id) {
+            return id;
+        }).each(function(id) {
+            d3.select(this).style("background-color", chart.color(id));
+        }).on("mouseover", function(id) {
+            chart.focus(id);
+        }).on("mouseout", function(id) {
+            chart.revert();
+        }).on("click", function(id) {
+            chart.toggle(id);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.lvc.IMSbasaglar</id>
+    <name>Basaglar</name>
+    <version>2.6.3</version>
+    <publisher>vaughanbarwood</publisher>
+    <url>http://</url>
+    <description>undefined</description>
+    <copyright>2015 by vaughanbarwood</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">com.lvc.html2pdf</module>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">false</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>6.0.1.GA</sdk-version>
+    <property name="appc-app-id" type="string">57d6d6b07f5203b7427ecff5</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">WwTZXpa56YVp63TkBZwVZ15mUYbdh8ui</property>
+    <property name="acs-oauth-key-development" type="string">fqmeeDpIxJkly9wUfPBjn1jtMOZt6Sec</property>
+    <property name="acs-api-key-development" type="string">4guVrYiX7YUYAy4ZlxFuUuDYbfcjWSOP</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">6unVxJUXIsm3xvi0m1</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">qYYTBiuOXm6xEboBgLN4m7h0FQApQHC8</property>
+    <property name="acs-oauth-key-production" type="string">R0ob5vyH0uzij1HK7FQ5xtX8eCTYAXVA</property>
+    <property name="acs-api-key-production" type="string">BEEaYr7l2bDDvthQ0yy5uE6senPWfl3y</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">MuYSRNqntvXevBGo0Y</property>
+    <property name="appc-org-id" type="string">100030516</property>
+    <property name="appc-creator-user-id" type="string">c268124b-86d2-48c5-8e8a-239c1c5caf52</property>
+    <guid>d2ea33ab-de16-4aa5-9777-34158e41addf</guid>
+</ti:app>

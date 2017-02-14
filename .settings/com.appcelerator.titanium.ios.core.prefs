@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=3223IMS_Lily-Basaglar-App
+iosLaunchConfigurationAttributes/ATTR_UPLOAD_DEBUG_SYMBOLS=false
+iosLaunchConfigurationAttributes/appid=com.lvc.IMSbasaglar
+iosLaunchConfigurationAttributes/certificate=LIGHTHOUSE VISUAL COMMUNICATIONS LTD
+iosLaunchConfigurationAttributes/distribute_path=/Users/szabi/Desktop
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=10.2
+iosLaunchConfigurationAttributes/uuid=05f19fd1-3ad8-4d17-88d0-ef99e4afd66d

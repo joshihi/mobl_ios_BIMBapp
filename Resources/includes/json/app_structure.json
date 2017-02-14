@@ -1,0 +1,230 @@
+{
+	"side_menu": [
+		"Overview",
+		"Introduction",
+		"Model Flow",
+		"Assumptions",
+		"Data Inputs",
+		"Budget Impact",
+		"Report",
+		"Prescribing Information",
+		"Appendix",
+		"References"
+	],
+	"login_options": [{
+		"password": "Sau1",
+		"id": "saudi"
+	}, {
+		"password": "Mal2",
+		"id": "malaysia"
+	}, {
+		"password": "Sou3",
+		"id": "south_africa"
+	}, {
+		"password": "Egy4",
+		"id": "egypt"
+	}],
+	"top_bar": {
+		"title": "BASAGLAR™",
+		"left_title_text": "Insulin Glargine"
+	},
+	"access": {
+		"prescribing_text": "Prescribing\nInformation",
+		"access_text": "ACCESS",
+		"intro_header_text": "Insulin Glargine Biosimilar",
+		"intro_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod\nbibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo\ncommodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et\nmagnis dis parturient montes, nascetur ridiculus mus.",
+		"reference_text": "UK/GLA/00028c July 2015",
+		"error_message": "Access code incorrect"
+	},
+	"overview": {
+		"title": "BASAGLAR™ OVERVIEW",
+		"proceed_text": "PROCEED TO INTRODUCTION",
+		"top_left": "Basaglar™ has the same amino acid sequence, \npharmaceutical form and strength as Lantus®",
+		"top_right": "There are no clinically meaningful differences in the \nefficacy and safety profile of Basaglar™ and Lantus®",
+		"bottom_left": "Basaglar™ is indicated for the treatment of \ndiabetes mellitus in adults, adolescents, \nand children aged ≥ 2 years ",
+		"bottom_right": "The Basaglar™ initiation experience is designed to \nhelp patients feel emotionally supported"
+	},
+	"intro": {
+		"title": "INTRODUCTION",
+		"content_one": {
+			"title": "Diabetes Heritage",
+			"ref_text": "<body class='intro_reference' >*Lantus is the Registered Trade Mark of Sanofi<br>1. European Medicines Agency: <span class='green-text'>Assessment Report</span><br>2. European Medicines Agency: <span class='green-text'>European Public Assessment Reports.</span> Accessed February 2015.</body>",
+			"slides": [{
+				"main_text": "A Boehringer Ingelheim (BI) – Lilly Alliance was established in 2011\nThe Alliance capitalises on the strengths of 2 successful global companies"
+			}, {
+				"main_text": "The Lilly-BI Alliance's diabetes heritage"
+			}, {
+				"main_text": "Lilly-BI has a long heritage in diabetes, from the first available insulin\ntherapy to the first biosimilar insulin approved in Europe",
+				"pop_up_title": "Lilly-BI Heritage",
+				"pop_up_sub_title": "Lilly-BI has a long heritage in diabetes, from the first available\ninsulin therapy to the first biosimilar insulin approved in Europe"
+
+			}, {
+				"main_text": "The Lilly-BI Alliance is committed to expanding treatment options\nfor patients with Type 1 and Type 2 diabetes"
+			}]
+		},
+		"content_two": {
+			"title": "Basaglar™",
+			"views": [{
+				"text": "BASAGLAR™ and  \nLantus® provide similar  \nHbA1c reductions in T1DM",
+				"graph_title": "BASAGLAR™ and Lantus® provide similar HbA1c reductions in T1DM",
+				"link": "graph_1"
+			}, {
+				"text": "BASAGLAR™ and \nLantus® provide similar \nFBG control in T1DM",
+				"graph_title": "BASAGLAR™ and Lantus® provide similar FBG control in T1DM",
+				"link": "graph_2"
+			}, {
+				"text": "Weight change and total \ndaily insulin dose are \nsimilar with BASAGLAR™ \nand Lantus® in T1DM",
+				"graph_title": "Weight change and total daily insulin dose are similar with BASAGLAR™ and Lantus® in T1DM",
+				"link": "graph_3"
+			},{
+				"text": "BASAGLAR™ and  \nLantus® provide \nsimilar HbA1c and FBG reductions in T2DM",
+				"graph_title": "BASAGLAR™ and Lantus® provide similar HbA1c and FBG reductions in T2DM",
+				"link": "graph_5"
+			},{
+				"text": "Weight change and \nmean daily insulin dose \nare similar with \nBASAGLAR™ and \nLantus® in T2DM",
+				"graph_title": "Weight change and mean daily insulin dose are similar with BASAGLAR™ and Lantus® in T2DM",
+				"link": "graph_6"
+			}, {
+				"text": "HbA1c reductions are \nsimilar for BASAGLAR™ \nand Lantus® in T2DM, in \ninsulin-naïve patients \nand patients previously treated with Lantus®",
+				"graph_title": "HbA1c reductions are similar for BASAGLAR™ and Lantus® in T2DM, in insulin-naïve patients and also in patients previously treated with Lantus®",
+				"link": "graph_7"
+			}, {
+				"text": "The safety profiles of BASAGLAR™ and Lantus® are similar in patients with T1DM and in patients with T2DM",
+				"graph_title": "The safety profiles of BASAGLAR™ and Lantus® are similar in patients with T1DM and in patients with T2DM",
+				"link": "graph_9"
+			},{
+				"text": "The rate of hypoglycaemia is similar with BASAGLAR™ and Lantus® in patients with T1DM and in patients with T2DM",
+				"graph_title": "The rate of hypoglycaemia is similar with BASAGLAR™ and Lantus® in patients with T1DM and in patients with T2DM",
+				"link": "graph_10"
+			}]
+		},
+		"content_three": {
+			"title": "Basaglar™ \nSequence",
+			"main_title": "Basaglar™ has an identical amino acid sequence\nto Lantus® insulin glargine",
+			"pop_up_title": "Lilly Heritage",
+			"pop_up_sub_title": "Basaglar™ has an identical amino acid sequence\nto Lantus® insulin glargine"
+		},
+		"content_four": {
+
+			"title": "Clinical Efficacy & Safety"
+
+		},
+		"content_five": {
+			"title": "Device",
+			"sub_text": "Basaglar™ is available \nin the Lilly prefilled \nKwikPen™ and in \ncartridges for use in \nthe reusable Lilly \nHumaPen Savvio®",
+			"proceed_text": "PROCEED TO MODEL FLOW"
+		},
+		"content_six": {
+			"title": "Initiation \nExperience",
+			"sub_title": "Helping to improve the patient insulin initiation experience",
+			"pink_text": "The BASAGLAR™ initiation experience may:",
+			"green_text": "By:",
+			"rows": [{
+				"pink_text": "Improve patient education",
+				"green_text": "Using straightforward language"
+			}, {
+				"pink_text": "Reduce resistance",
+				"green_text": "Helping healthcare professionals as they help their patients"
+			}, {
+				"pink_text": "Engage patients",
+				"green_text": "Using a light, approachable tone"
+			}, {
+				"pink_text": "Support patients",
+				"green_text": "Providing streamlined support"
+			}, {
+				"pink_text": "Empower patients",
+				"green_text": "Helping patients feel comfortable and confident"
+			}, {
+				"pink_text": "Simplify treatment initiation",
+				"green_text": "Helping patients Ease-In to insulin glargine"
+			}],
+			"proceed_text": "PROCEED TO MODEL FLOW",
+			"slide_two_title": "The Basaglar™ initiation experience is designed to provide\nemotional support to healthcare providers and patients"
+		}
+	},
+	"bio": {
+		"tab_one": "What is a biosimilar?",
+		"tab_two": "How similar is similar?",
+		"tab_one_para": "A biosimilar is a therapeutic protein molecule with an identical \namino acid sequence to that of a previously marketed \nbiological reference product, with no clinically meaningful \ndifference in safety or efficacy¹\n\nThe complexity of biological medicines, and their manufacture, \nis such that biosimilar final products are similar, but not \nidentical to reference products\n\nThe term biosimilar is a regulatory designation used in the UK \nand other markets, but not applied universally to every country \nor geographic region\n\nIf a biologic is patented, other companies are able to produce \na biosimilar of the biological reference product when the \npatent expires",
+		"tab_two_para": "Similarity demonstrated in preclinical in vitro and in vivo PD \nand toxicology studies¹\n\nSimilarity demonstrated in clinical trials designed to assess PK \nand PD against standard acceptance limits¹\n\nNo clinically meaningful differences in immunogenicity1\n\nHead-to-head clinical trial(s) to detect relevant differences in \nefficacy or drug-related safety*¹",
+		"prescribing_text": "Prescribing\nInformation"
+	},
+	"model": {
+		"title": "MODEL FLOW",
+		"para": "The model aims to estimate the cost impact of the introduction of Basaglar to the diabetes market\n\nInput values are pre-defined (grey cells) but can be varied by the user. Users can input their own data where required (white cells)\n\nBelow is an outline of the stages of the model from this screen onwards",
+		"circle_1": {
+			"title": "ASSUMPTION",
+			"text": "All assumptions\napplied in the\nmodel are\nlisted here"
+		},
+		"circle_2": {
+			"title": "DATA\nINPUTS",
+			"text": "Filter down\npopulation, select\ncomparators,\nview costs"
+		},
+		"circle_3": {
+			"title": "BUDGET\nIMPACT",
+			"text": "Graphical/tabular\ndisplay of budget\nimpact over\n5 years"
+		},
+		"circle_4": {
+			"title": "REPORT",
+			"text": "Written summary\nof model inputs\nand results"
+		},
+		"proceed_text": "PROCEED TO ASSUMPTIONS"
+	},
+	"assumptions": {
+		"title": "ASSUMPTIONS",
+		"slides": [{
+			"main_text": "Lilly-BI is making a biosimular insulin glargine available to physicians and patients. The model assumes that the basal insulin glargine market will be impacted as a proportion of patients starting on basal insulin glargine (new initiators) may use Basaglar."
+		}, {
+			"main_text": "Proportion of new initiators is estimated based on a function of the number of T1 and T2 patients, the proportion of patients on basal insulin glargine and the proportion of this market considered new initiators."
+		}, {
+			"main_text": "Population estimates are based on local country data. Where published estimates of country-specific population data are unavailable, estimates from a survey of local physicians have been applied in the model."
+		}, {
+			"main_text": "Basaglar market share predictions are defined by the user on the data input screen (defined as the percent of new initiators expected to use Basaglar in a given year)."
+		}, {
+			"main_text": "The budget impact is estimated by comparing the potential market in the absence of Basaglar (patients would be managed on existing basal insulin glargines) with a market where Basaglar is available (patients would be managed on Basaglar)."
+		}, {
+			"main_text": "The current market of insulin glargine is limited to Lantus in the included countries but placeholders are included for new products including Merck Samsung’s new Ludsuna biosimilar due to launch in 2017."
+		}, {
+			"main_text": "In the current market Basaglar is not expected to take market share from Toujeo"
+		}, {
+			"main_text": "The model includes drug costs only. The model estimates annual and cumulative cost for both markets (with and without Basaglar). The cost in a given year includes new initiators plus initiators from previous years (who are assumed to remain on treatment). The budget impact is estimated as the difference in cost between these two market estimates."
+		}, {
+			"main_text": "Lantus prices have been estimated using an average weighted price across available formulations using country-specific sales volume data from the IMS MIDAS dataset."
+		}, {
+			"main_text": "In the case of Basaglar, where the price of cartridges have not been provided, the prices for pens has been applied instead."
+		}, {
+			"main_text": "The user can select default prices including public prices (the price at which the consumer buys product from a pharmacy or the final price reimbursed by the government) or Net Wholesale Price (the list price or invoice price charged by a manufacturer to distributors or other third parties that take legal ownership of the product and resell it to pharmacies or hospitals. This price is also commonly referred to as the \"ex - manufacturer\" price). Alternatively the user can over-write country level data and input an expected daily cost."
+		}]
+	},
+	"data_inputs": {
+		"title": "DATA INPUTS",
+		"slides": [{
+			"main_text": "Basaglar™ is Boehringer Ingelheim-Lilly’s alliance\nbiosimilar version of Sanofi’s Lantus®*\n(insulin glargine) molecule¹"
+		}]
+	},
+	"results": {
+		"title": "Results",
+		"slides": [{
+			"main_text": "Basaglar™ is Boehringer Ingelheim-Lilly’s alliance\nbiosimilar version of Sanofi’s Lantus®*\n(insulin glargine) molecule¹"
+		}]
+	},
+	"summary": {
+		"title": "REPORT"
+	},
+	"heritage": {
+		"title": "THE BOEHRINGER INGELHEIM-LILLY\nALLIANCE’S DIABETES HERITAGE",
+		"slides": [{
+			"year": "1923",
+			"main_text": "Lilly collaborates with the University of Toronto to isolate and \npurify insulin for the treatment of diabetes, then a fatal disease \nwith no effective treatment options. The work results in Lilly's \nintroduction of Iletin, the world's first commercially available \ninsulin product, in 1923."
+		}, {
+			"year": "1982",
+			"main_text": "A significant breakthrough in diabetes care came with Lilly’s \n1982 introduction of Humulin® (human insulin) identical to that \nproduced by the human body. Humulin® is the world’s first \nhuman-healthcare product created using recombinant \nDNA technology."
+		}, {
+			"year": "1996",
+			"main_text": "In 1996 the first analogue insulin – Lilly’s Humalog® (insulin lispro) \n– receives marketing authorisation. Analogue insulin is a \ngenetically modified form whereby the amino acid sequence is \naltered to change how the insulin is absorbed."
+		}, {
+			"year": "2014",
+			"main_text": "In 2014, Lilly-BI were the first company to successfully produce \nand obtain European marketing authorisation for a biosimilar \ninsulin – Basaglar™ insulin glargine."
+		}]
+	}
+}

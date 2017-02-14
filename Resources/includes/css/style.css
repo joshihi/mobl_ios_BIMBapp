@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),  
+  		 url('../fonts/GothamRounded-Bold.otf')  format('opentype'),
+	     url('../fonts/GothamRounded-Bold.woff') format('woff'), 
+	     url('../fonts/GothamRounded-Bold.ttf')  format('truetype'), 
+	     url('../fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('../fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/GothamRounded-Book.otf')  format('opentype'),
+	   url('../fonts/GothamRounded-Book.woff') format('woff'),
+	   url('../fonts/GothamRounded-Book.ttf')  format('truetype'),
+	   url('../fonts/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/Gotham-Book.otf')  format('opentype'),
+	   url('../fonts/Gotham-Book.woff') format('woff'),
+	   url('../fonts/Gotham-Book.ttf')  format('truetype'),
+	   url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+	margin:0;
+	padding:0;
+}
+
+sub{
+	font-size:8px;
+}
+
+body, html {
+	font-family: 'GothamRounded-Book';
+}
+
+#chart_div{
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding: 0;
+	font-family: 'GothamRounded-Bold';
+}
+
+.h1_brown{
+	color:#362c28;
+	font-size:30px;
+	font-family: 'GothamRounded-Bold';
+}
+
+.h1_white{
+	color:#FFFFFF;
+	font-size:30px;
+	font-family: 'GothamRounded-Bold';
+	text-align:center;
+}
+
+.h2{
+	color:#FFFFFF;
+	font-size:18px;
+	font-family: 'GothamRounded-Book';
+}
+
+.content_box_text{
+	color:#362c28;
+	font-size:12px;
+	font-family: 'Gotham-Book';
+}
+
+.button_text{
+	text-align:center; 
+	position: relative;
+ 	 top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	font-family: 'GothamRounded-Bold';
+	color: #FFFFFF;
+	font-size:14px;
+}
+
+/* INTRO */
+
+.intro_reference{
+	text-align: center;
+	font-family: 'Gotham-Book';
+	font-size:12px;
+	color: '#362c28';
+}
+
+.green-text{
+	color: #b9b219;
+	font-family: 'GothamRounded-Bold';
+}
+
+.blue-text{
+	color: #63b67c;
+	font-family: 'GothamRounded-Bold';
+}
+
+/* ACCESS */
+
+.access_title_text{
+	font-family: 'GothamRounded-Bold';
+	color:#b9b219;
+	font-size:30px;
+	text-align:center;
+	margin-bottom:30px; 
+}
+
+.access_intro_text{
+	font-family: 'GothamRounded-Book';
+	color:#FFFFFF;
+	font-size:14px;
+	text-align:center; 
+}
+
+.access_ref_text{
+	font-family: 'Gotham-Book';
+	color:#666666;
+	font-size:14px;
+}
+
+/* PRESCRIBING INFORMATION */
+.pi {
+	height: 585px;
+}
+.pi a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+.pi strong {
+	font-family: 'GothamRounded-Bold';
+	font-weight: normal;
+}
+.pi p {
+	font-size: 10px;
+	line-height: 130%;
+	margin: 0 0 10px 0;
+	color: #362c28;
+}
+.pi .column{
+	width: 438px;
+	position: relative;
+	height: 100%;
+}
+.pi .column a {
+	color: #63b67c;
+	text-decoration: none;
+	font-family: 'GothamRounded-Bold';	
+}
+.pi .column.left {
+	float: left;
+}
+.pi .column.right {
+	float: right;
+}
+.pi .bottom_box {
+	-webkit-box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 438px;
+	border-radius: 5px;
+	background-color: #acae25;
+	padding: 12px 12px 0 12px;
+}
+.pi .bottom_box p {
+	color: #fff;
+}
+.pi .bottom_box p strong {
+	-webkit-appearance: none;
+	color: #fff !important;
+}
+.pi .bottom_box a {
+	text-decoration: none;
+	color: #362c28;
+}

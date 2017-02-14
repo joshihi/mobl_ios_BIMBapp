@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link href="includes/d3/style.css" rel="stylesheet" type="text/css">
+<link href="includes/d3/c3.css" rel="stylesheet" type="text/css">
+<style> 
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+//  display: none;
+}
+</style>
+
+
+<body>
+    <script src="includes/d3/d3.v3.js"></script>
+    <script>
+	var normal_value = 50;
+       var jsonData=[{
+            "y_category": "% of population with diabetes",
+            "lower": 4733212195.309892,
+            "higher": 5087526903.763694,
+            "color": "#ABA714"
+        }, {
+            "y_category": "% of population with diabetes",
+            "lower": 5087526903.763694,
+            "higher": 5441841612.217497,
+            "color": "#B83D88"
+        }, {
+            "y_category": "% of patients with T2DM",
+            "lower": 4733212195.309892,
+            "higher": 5087526903.763694,
+            "color": "#ABA714"
+        }, {
+            "y_category": "% of patients with T2DM",
+            "lower": 5087526903.763694,
+            "higher": 5441841612.217496,
+            "color": "#B83D88"
+        }]
+		data=jsonData;
+		function type(t) {
+            return t.higher = +t.higher, t
+        }
+        var margin = {
+                top: 20,
+                right: 20,
+                bottom: 30,
+                left: 40
+            },
+            width = 360 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom,
+            y = d3.scale.ordinal().rangeRoundBands([0, height], .1),
+            x = d3.scale.linear().range([width, 0]),
+            yAxis = d3.svg.axis().scale(y).orient("left"),
+            xAxis = d3.svg.axis().scale(x).orient("bottom"),
+            svg = d3.select("body").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        y.domain(data.map(function(t) {
+            return t.y_category
+        })), x.domain([d3.max(data, function(t) {
+            return t.higher
+        }), 0]), svg.append("g").attr("class", "y axis").call(yAxis), svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call(xAxis), svg.selectAll(".bar").data(data).enter().append("rect").attr("class", "bar").attr("y", function(t) {
+            return y(t.y_category)
+        }).attr("height", y.rangeBand()).attr("x", function(t) {
+            return x(t.lower)
+        }).attr("width", function(t) {
+            return x(t.higher - t.lower)
+        }).style("fill", function(t) {
+            return t.color
+        }), svg.append("line").style("stroke", "black").attr("x1", function(t) {
+            return x(normal_value)
+        }).attr("y1", 0).attr("x2", function(t) {
+            return x(normal_value)
+        }).attr("y2", height);
+    </script>
+</body>
+
+</html>

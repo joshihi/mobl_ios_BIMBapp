@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="includes/d3/style.css" rel="stylesheet" type="text/css">
+    <link href="includes/d3/c3.css" rel="stylesheet" type="text/css">
+    <script src="includes/d3/d3.v3.js"></script>
+    <script src="includes/d3/c3.js"></script>
+</head>
+
+<body>
+    <div id="chart" style="width:100%;height:100%;"></div>
+    <script type="text/javascript">
+        var chart = c3.generate({
+            "bindto": "#chart",
+            "data": {
+                "x": "x",
+                "columns": [
+                    ["x", 2016, 2017, 2018, 2019, 2020],
+                    ["Savings", 43119355.11410332, 84485417.3708328, 120895816.06340945, 148960584.17078865, 165094408.1741246],
+                    ["Cumulative", 43119355.11410332, 127604772.48493612, 248500588.54834557, 397461172.7191342, 562555580.8932588]
+                ],
+                "type": "bar",
+                "types": {
+                    "Cumulative": "line"
+                },
+                "names": {
+                    "Savings": "Savings",
+                    "Cumulative": "Cumulative budget impact®"
+                },
+                "groups": [
+                    ["Savings", "Cumulative"]
+                ]
+            },
+            "zoom": {
+                "enabled": false
+            },
+            "subchart": {
+                "show": false
+            },
+            "color": {
+                "pattern": ["#B83D88", "#000000"]
+            },
+            "grid": {
+                "x": {
+                    "show": false
+                },
+                "y": {
+                    "show": true,
+                    "lines": []
+                }
+            },
+            "axis": {
+                "x": {
+                    "label": "",
+                    "type": "category"
+                },
+                "y": {
+                    "label": {
+                        "text": "Saving (SAR)",
+                        "position": "outer-middle"
+                    }
+                }
+            },
+            "legend": {
+                "position": "inset",
+                "inset": {
+                    "anchor": "top-right",
+                    "x": 10,
+                    "y": -25,
+                    "step": 1
+                }
+            },
+            "padding": {
+                "top": 20
+            }
+        });
+        chart.toggle("Cumulative");
+        setTimeout(function() {
+            chart.load({
+                columns: [
+                    ["x", 2016, 2017, 2018, 2019, 2020],
+                    ["Savings", 43119355.11410332, 84485417.3708328, 120895816.06340945, 148960584.17078865, 165094408.1741246],
+                    ["Cumulative", 43119355.11410332, 127604772.48493612, 248500588.54834557, 397461172.7191342, 562555580.8932588]
+                ]
+            });
+        }, 100);
+        d3.select(".c3").insert("div", ".chart").attr("class", "legend").selectAll("span").data(["Total", "Lantus", "Basaglar"]).enter().append("span").append("li").attr("data-id", function(id) {
+            return id;
+        }).html(function(id) {
+            return "<span class='bullet' style='background-color:" + chart.color(id) + "'>&nbsp;</span>" + names[id];
+        }).on("click", function(id) {
+            chart.toggle(id);
+            this.classList.toggle("inactive");
+        });
+    </script>
+</body>
+
+</html>
+[INFO] :
